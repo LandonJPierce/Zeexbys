@@ -24,28 +24,32 @@ public static class SeedData
                 Name = "Flaming Chow",
                 Description = "Piping hot burger with all the trimmings, served open face, cooked with red-hot flares",
                 Calories = "899",
-                Price = 11
+                Price = 11,
+                Lethality = 14
             },
             new Menu
             {
                 Name = "Double-Smokey",
                 Description = "Double meat and burnt to the crisp, an acquired taste. Cooked with our best burners.",
                 Calories = "1400",
-                Price = 14
+                Price = 14,
+                Lethality = 37
             },
             new Menu
             {
                 Name = "Hot dog",
                 Description = "It's a hot dog, that's it...",
-                Calories = "bro it's literally a hot dog",
-                Price = 50
+                Calories = "400",
+                Price = 50,
+                Lethality = 0
             },
             new Menu
-            {
+            {             
                 Name = "BBQ Platter",
                 Description = "A bunch of exotic meats cooked with exotic vapors, exotic meats include: Aligator, Zebra, Iguana.",
                 Calories = "1600",
-                Price = 18
+                Price = 18,
+                Lethality = 62
             }
         );
         context.SaveChanges();

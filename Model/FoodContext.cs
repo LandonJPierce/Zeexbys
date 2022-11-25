@@ -47,7 +47,10 @@ public partial class FoodContext : DbContext
             entity.Property(e => e.Name)
                 .HasMaxLength(100)
                 .IsUnicode(false);
-            entity.Property(e => e.Price).HasColumnType("decimal(18, 0)");
+            entity.Property(e => e.Price)
+            .HasColumnType("decimal(18, 0)");
+            entity.Property(e => e.Lethality)
+            .HasColumnType("int");
         });
 
         OnModelCreatingPartial(modelBuilder);
