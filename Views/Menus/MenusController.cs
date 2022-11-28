@@ -7,7 +7,7 @@ using Microsoft.AspNetCore.Mvc.Rendering;
 using Microsoft.EntityFrameworkCore;
 using Zeexbys.Model;
 
-namespace Zeexbys.Controllers
+namespace Zeexbys.Views.Menus
 {
     public class MenusController : Controller
     {
