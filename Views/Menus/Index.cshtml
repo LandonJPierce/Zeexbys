@@ -8,6 +8,7 @@
 
 <html>
 <head>
+    <link href="~/css/StyleOnEm.css" rel="stylesheet" type="text/css" />
     <meta name="viewport" content="width=device-width" />
     <title>Index</title>
 </head>
@@ -18,19 +19,19 @@
 <table class="table">
     <thead>
         <tr>
-            <th>
+            <th class="namesHeader">
                 @Html.DisplayNameFor(model => model.Name)
             </th>
-            <th>
+            <th class="descriptionsHeader">
                 @Html.DisplayNameFor(model => model.Description)
             </th>
-            <th>
+            <th class="caloriesHeader">
                 @Html.DisplayNameFor(model => model.Calories)
             </th>
-            <th>
+            <th class="pricesHeader">
                 @Html.DisplayNameFor(model => model.Price)
             </th>
-            <th>
+            <th class="lethalityHeader">
                 @Html.DisplayNameFor(model => model.Lethality)
             </th>
             <th></th>
@@ -38,20 +39,21 @@
     </thead>
     <tbody>
 @foreach (var item in Model) {
+                
         <tr>
-            <td>
+            <td class="names">
                 @Html.DisplayFor(modelItem => item.Name)
             </td>
-            <td>
+            <td class="descriptions">
                 @Html.DisplayFor(modelItem => item.Description)
             </td>
-            <td>
+            <td class="calories">
                 @Html.DisplayFor(modelItem => item.Calories)
             </td>
-            <td>
+            <td class="prices">
                 @Html.DisplayFor(modelItem => item.Price)
             </td>
-            <td>
+            <td class="lethality">
                 @Html.DisplayFor(modelItem => item.Lethality)
             </td>
             <td>
